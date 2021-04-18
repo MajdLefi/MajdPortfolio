@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* navbar style (jwh behy hedhi) */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 15px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  padding: 15px 0;
+  background: #28b463;
+}
+
+.navbar.sticky .menu li a:hover {
+  color: #fff;
+}
+
+.navbar.sticky .logo a span {
+  color: #28b463;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: #28b463;
+}
+
+/* home-section styling twwa nbdlha mb3d */
+.home {
+  display: flex;
+  color: crimson;
+  height: 100vh;
+  min-width: 500px;
+  background: url(/res/background.jpg);
+  font-family: "Ubuntu" sans-serif;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+  font-size: 27px;
+  color: #fff;
+}
+
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  color: #28b463;
+}
+
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.navbar .logo a span {
+  color: #28b463;
+}
+
+.imgMajd {
+  border-radius: 100%;
+  border: #28b463 1px solid;
+}
+
+
+/*about styling*/
+section {
+  padding: 100px 0;
+}
+
+.about,
+.skills .works .contact .footer {
+  font-family: "Poppins", sans-serif;
+}
+
+section .title {
+  position: relative;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: #28b463;
+  padding: 5px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+.about .title::after {
+  content: "Who I am";
+}
+
+.about .about-content,
+.skills .serv-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+  color: #28b463;
+}
+
+.about .about-content .right .p {
+  text-align: justify;
+}
+
+.about .about-content .right a {
+}
+
+.about .about-content .left {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* services styling */
+
+
+
+.skills {
+  color: #fff;
+  background: #111;
+}
+
+.skills-content {
+  margin-left: 350px;
+}
+
+.webSkills,
+.mobileSkills,
+.backendSkills,
+.dbSkills,
+.designSkills {
+  margin-left: 0px;
+  display: flex;
+}
+
+.skills .title::before {
+  background: #fff;
+}
+
+.skills .serv-content .card {
+  width: calc(33% - 20px);
+}
+.box {
+  margin: 25px;
+  width: 150px;
+  height: 150px;
+}
+
+.textSkillsCard {
+  text-align: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**/
+.skillsTech ul li a {
+  padding-top: 20px;
+  display: block;
+  color: #fff;
+  font-size: 40px;
+}
+
+.progLang {
+  display: flex;
+}
+
+.skillsCard {
+  text-align: center;
+  margin-left: 90px;
+}
+
+.designSkills {
+  margin-top: 70px;
+  margin-left: 640px;
+}
+
+
+/*works styling*/
+.cardsWorks {
+  display: flex;
+  height: 500px;
+}
+
+.cardWork {
+  margin: 30px;
+  border-radius: 5px;
+  border: 0.5px rgb(105, 196, 135) solid;
+  width: 350px;
+  height: 500px;
+}
+
+.cardWorkImg {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.cardWorkTitle {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+.cardWorkText {
+  margin-top: 20px;
+}
+
+.cardWorkBody {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cardWorkFooter {
+  text-align: center;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.03);
+  margin-top: 31px;
+}
+
+/* services styling */
+.contact .title::after {
+  content: "Get in touch";
+}
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+}
+
+.followUsContainer {
+  margin-top: 20px;
+  height: 200px;
+}
+.fab {
+  margin-top: 7px;
+}
+
+.followUsText {
+  text-align: center;
+}
+
+.followUsItems {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.followUsItems {
+  width: 100%;
+  height: auto;
+  border-radius: 200%;
+  margin: auto;
+  padding: 20px;
+}
+
+.followUsItems ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.followUsItems ul li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background: #28b463;
+  border-radius: 100px;
+  margin: 0px 10px;
+}
+
+.icongithub3:hover {
+  background: #34465d;
+}
+
+.iconlinkedin:hover {
+  background: #0077B5;
+}
+
+.iconmedium:hover {
+  background: rgba(0, 0, 0, 1);
+}
+
+.iconfb:hover {
+  background: #3b5999;
+}
+
+.followUsItems ul li a {
+  padding-top: 20px;
+  display: block;
+  color: #fff;
+  font-size: 40px;
+}
+.followUsTxt {
+  color: #fff;
+  padding-top: 25px;
+}
+
+/* .followUcItems ul li:nth-child(1) {
+  background: #3b5999;
+}
+
+.followUcItems ul li:nth-child(2) {
+  background: #1cd82c;
+}
+
+.followUcItems ul li:nth-child(3) {
+  background: #1cd82c;
+}
+
+.followUcItems ul li:nth-child(4) {
+  background: #1cd82c;
+} */
+/*footer styling*/
+
+footer {
+  background: #111;
+  padding: 20px 23px;
+  color: #fff;
+}
+
+footer span a {
+  color: #28b463;
+  text-decoration: underline;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
+
+/* responsive style  */
+
+@media (max-width: 1330px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+  .navbar .menu {
+    position: fixed;
+    background: #28b463;
+  }
+}
